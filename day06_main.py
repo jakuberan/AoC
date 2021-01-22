@@ -3,8 +3,8 @@
 import string
 
 # Define path
-# data_path = "data/input06/input_test"
-data_path = "data/input06/input"
+# data_path = "data/day06_test"
+data_path = "data/day06"
 
 # Auxiliary dictionaries
 group = {k: 0 for k in string.ascii_lowercase}

@@ -1,0 +1,30 @@
+# Import libraries
+# import numpy as np
+
+# Define path
+# data_path = "data/day08_test"
+data_path = "data/day08"
+
+# Build graph structure
+program = []
+
+f = open(data_path, "r")
+for x in f:
+    op = x.strip().split()
+    program.append([op[0], int(op[1])])
+
+# run the program
+head = 0
+state = 0
+used = []
+while head not in used:
+    used.append(head)
+    if program[head][0] == "acc":
+        state += program[head][1]
+        head += 1
+    elif program[head][0] == "nop":
+        head += 1
+    elif program[head][0] == "jmp":
+        head += program[head][1]
+
+print(state)

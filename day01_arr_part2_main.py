@@ -1,5 +1,5 @@
 # Define path
-data_path = "data/input01/input"
+data_path = "data/day01"
 target = 2020
 
 # Read line-by-line
