@@ -1,9 +1,9 @@
 # Import libraries
 # import numpy as np
-from src.day05_seat_to_num import seat_to_num
+from src.day05_supp import seat_to_num
 
 # Define path
-data_path = "data/input05/input"
+data_path = "data/day05"
 
 # Auxiliary parameters
 max_so_far = 0

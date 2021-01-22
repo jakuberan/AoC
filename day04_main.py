@@ -1,12 +1,12 @@
 # Import libraries
 # import numpy as np
-from src.day04_passport import Passport
+from src.day04_supp import Passport
 
 # Define path
-# data_path = "data/input04/input_invalid"
-# data_path = "data/input04/input_valid"
-# data_path = "data/input04/input_test"
-data_path = "data/input04/input"
+# data_path = "data/day04_invalid"
+# data_path = "data/day04_valid"
+# data_path = "data/day04_test"
+data_path = "data/day04"
 
 # Read line-by-line
 valid = 0

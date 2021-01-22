@@ -2,8 +2,8 @@
 import numpy as np
 
 # Define path
-# data_path = "data/input03/input_test"
-data_path = "data/input03/input"
+# data_path = "data/day03_test"
+data_path = "data/day03"
 
 # define output data
 data = []

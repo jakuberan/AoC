@@ -1,6 +1,6 @@
 # Define path
-# data_path = "data/input02/input_test"
-data_path = "data/input02/input"
+# data_path = "data/day02_test"
+data_path = "data/day02"
 
 # Read line-by-line
 list_of_sums = []
@@ -11,10 +11,10 @@ for x in f:
 
     # save intevals
     [low, high] = x_in[0].split("-")
-    count = x_in[2].count(x_in[1][0])
+    letter = x_in[1][0]
 
     # Check validity
-    if int(low) <= count and count <= int(high):
+    if (x_in[2][int(low) - 1] == letter) != (x_in[2][int(high) - 1] == letter):
         valid += 1
 
 print(str(valid))
