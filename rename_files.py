@@ -14,6 +14,6 @@ for dir, subdir, listfilename in os.walk(path):
             new_filename = "day" + daynum + filename.replace("input", "")
 
             # Copy files
-            src = os.path.join(dir, filename)  # NOTE CHANGE HERE
-            dst = os.path.join(path, new_filename)  # AND HERE
+            src = os.path.join(dir, filename)
+            dst = os.path.join(path, new_filename)
             os.rename(src, dst)
